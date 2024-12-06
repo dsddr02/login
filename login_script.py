@@ -93,7 +93,7 @@ async def main():
 
         now_beijing = format_to_iso(datetime.utcnow() + timedelta(hours=8))
         if is_logged_in:
-            message += f"✅*{serviceName}*账号 *{username}* 于北京时间 {now_beijing}登录面板成功！\n\n"
+            message += f"✅*{serviceName}*账号  于北京时间 {now_beijing}登录面板成功！\n\n"
             print(f"{serviceName}账号 {username} 于北京时间 {now_beijing}登录面板成功！")
         else:
             message += f"❌*{serviceName}*账号 *{username}* 于北京时间 {now_beijing}登录失败\n\n❗请检查*{username}*账号和密码是否正确。\n\n"
